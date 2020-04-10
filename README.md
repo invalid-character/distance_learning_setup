@@ -1,4 +1,4 @@
-# Better Distance Learning System
+# Better Distance Learning System (name TBD)
 
 ## The problems:
 As a parent, I’ve seen a disjointed system applied to learning at home.  Some teachers get it, others don’t.  The teachers are unwilling or unable to check in with students on a regular basis, giving students enough time to learn on their own, but not so much time that the students lose interest or have their own mistakes reinforced.
