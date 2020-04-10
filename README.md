@@ -30,3 +30,33 @@ This will not be an SIS (student information system) (I’m not going down that 
 
 ### Parents: 
 (1..many per student) They are able to view assignments. They are able to (with teacher permissions) view reports of complete/incomplete assignments. They are able to see students’ reports.
+
+
+# School Structures
+## Classes:
+Each “class” will be a timeslot defined by an admin.  
+Each class will have 1 or more sessions. (e.g. days the class can appear on)
+Each class session will not necessarily be at the same time each day (e.g. Blue day it may be period 1, Yellow day, it may not exist, Orange day, it may be period 5)
+The class will have at least 1 educator assigned to it.  The educators are in control of the class.
+The class will have at least 1 student assigned to it.
+The class will have a video conference assigned to it, with separate audio and video controls
+The class will have a whiteboard assigned to it.  If used, the whiteboard will be saved at the end of class, in addition to any time the educator triggers a save.
+The class will have 0..many assignments assigned. These can be assigned in advance, during or after the class.
+The class will have 1 persistent message board, with the teacher able to mark any post as hidden.
+The educator can upload files for students or other educators to download.  These will persist and be assigned to the class and class session.
+Class participation is mutually exclusive. (e.g. you cannot have a student  educator in multiple simultaneous classes)
+Students will be able to toggle a “raise hand” flag to alert educators to an immediate question/need.
+Educators will be alerted to this via audio and visual cues.  They will be able to turn this off, and optionally respond via DM.
+
+## Assignments
+There should be a text field accompanying all assignments.
+0..many files can be attached to an assignment.
+Educator determines response types (video, audio, text, file, attachment markup, etc)
+Each assignment will have a “completed” flag which can be toggled by the educator and student.
+Each assignment/student pair will have a “response”
+The educator can toggle 2 “discussion” fields where students can discuss the assignment with other students and the educator or only the educator (the latter will be attached to the response).
+Educators can toggle if parents can see the response, discussion, grade
+
+Each assignment response can be given a grade.
+
+For any response, the educator can override other defaults to allow parents to see responses, grades, discussions, etc they would not otherwise be able to see.
